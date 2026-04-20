@@ -38,10 +38,10 @@ models/
 *.safetensors
 
 # Embeddings (large binary files — regenerate with notebooks)
-app/embeddings/*.npy
+# app/embeddings/*.npy
 
 # Outputs — commit only examples, not generated data
-app/outputs/risk_reports/*.csv
+# app/outputs/risk_reports/*.csv
 
 # IDE
 .vscode/

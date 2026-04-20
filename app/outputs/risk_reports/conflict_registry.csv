@@ -1,0 +1,2 @@
+clause_id_a,clause_id_b,document_a,document_b,text_a,text_b,similarity,conflict_type,conflict_severity
+data_protection_policy.txt_0021,iaea_safety_standards.txt_0046,data_protection_policy.txt,iaea_safety_standards.txt,Penalties include imprisonment not exceeding five years for serious violations.,Penalties may include imprisonment for up to ten years for the most serious violations.,0.8706,Overlap,MEDIUM

@@ -1,234 +1,288 @@
-# 🛡️ Policy Compliance AI
+# AI-Driven Policy & Compliance Intelligence System
 
-> **AI-Driven Policy & Compliance Intelligence System** — Automatic compliance extraction, risk detection, semantic Q&A, and document summarization for regulatory documents.
+> **TCS iON Industry Project** | AKS University Satna | 2026
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.32-red?logo=streamlit)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-drivencomplianceintelligencesystem-ew7r5jnbbenpprjjcttwyt.streamlit.app/)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![NLP](https://img.shields.io/badge/NLP-Sentence--Transformers-orange)
+
 
 ---
 
-## 📋 Table of Contents
+## 🔗 Live Demo
 
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Usage Guide](#usage-guide)
-- [Notebooks](#notebooks)
-- [Dataset](#dataset)
+**👉 [Click here to open the app](https://ai-drivencomplianceintelligencesystem-ew7r5jnbbenpprjjcttwyt.streamlit.app/)**
 
 ---
 
-## Overview
+## 📌 Overview
 
-Policy Compliance AI is an end-to-end NLP pipeline that ingests regulatory documents (PDF, DOCX, TXT), extracts compliance clauses, scores risk levels, detects conflicts and gaps, and provides a semantic Q&A interface — all surfaced through an interactive Streamlit dashboard.
+An end-to-end AI-powered compliance intelligence system that automatically processes policy and regulatory documents, extracts structured compliance knowledge, detects risks and conflicts, and delivers explainable insights through an interactive web interface.
 
+Built for Governance, Risk & Compliance (GRC) teams to replace slow, error-prone manual policy review with intelligent automation.
 
-## Features
+---
+
+## ✨ Key Features
 
 | Feature | Description |
 |---|---|
-| 📥 Document Ingestion | PDF, DOCX, TXT support with automated text extraction |
-| 🔍 Clause Extraction | Rule-based + ML extraction of obligations, prohibitions, deadlines |
-| ⚠️ Risk Scoring | Multi-factor risk scoring (0–100) with HIGH / MEDIUM / LOW levels |
-| 🧠 Semantic Q&A | Sentence-BERT embeddings + cosine similarity search |
-| 🔴 Conflict Detection | Cross-document contradiction identification |
-| 🕳️ Gap Analysis | Missing provision detection against compliance templates |
-| 📊 Dashboard | Interactive Plotly charts, drilldown, and CSV export |
-| 📝 AI Summary | Auto-generated executive summaries with recommendations |
+| 📄 **Document Ingestion** | Upload PDF or TXT policy documents — automatic extraction and cleaning |
+| 🔍 **Semantic Q&A** | Ask questions in plain English — answers grounded in source clauses |
+| ⚠️ **Risk Scoring** | Every clause scored 0–100 with HIGH / MEDIUM / LOW label |
+| 💡 **Explainability** | Plain-English reasoning for every risk score |
+| ⚡ **Conflict Detection** | Cross-document clause contradiction and duplication detection |
+| 🕳️ **Gap Analysis** | Obligations without corresponding control clauses flagged |
+| 📝 **Document Summary** | AI-generated executive summary with obligations, entities, recommendations |
+| ⬇️ **Export** | Download risk reports, clauses, and recommendations as CSV |
 
 ---
 
-## Project Structure
+## 🖥️ Application Screens
 
 ```
-policy-compliance-ai/
+🏠 Home Dashboard     → KPI metrics, risk charts, filters, drilldown table
+📄 Document Explorer  → Clause-level browsing with risk metadata per document
+💬 Compliance Q&A     → Semantic search over policy content
+⚠️ Risk Dashboard     → Risk overview, conflict registry, gap analysis
+📝 Document Summary   → AI summary with loader, risk profile, recommendations
+```
+
+---
+
+## 🏗️ System Architecture
+
+```
+Raw PDFs
+   │
+   ▼ Step 1 — Ingestion
+Clause Dataset (clause_id · text · section · metadata)
+   │
+   ▼ Step 2 — Semantic Understanding
+Embeddings (384-dim) + NER Entities + Rule Classification
+   │
+   ▼ Step 3 — Risk Assessment
+Risk Scores · Conflict Registry · Gap Analysis · Explanations
+   │
+   ▼ Step 4 — Interface
+Streamlit App (5 screens · Q&A · Charts · CSV Export)
+```
+
+---
+
+## 📁 Project Structure
+
+```
+AI-driven_compliance_intelligence_system/
 │
-├── app/                          # Streamlit application
-│   ├── app.py                    # Main dashboard (5 tabs)
-│   ├── embeddings/               # Saved sentence embeddings (.npy)
-│   ├── outputs/
-│   │   └── risk_reports/         # CSV outputs from notebooks
-│   │       ├── risk_labeled_clauses.csv
-│   │       ├── conflict_registry.csv
-│   │       └── gap_analysis.csv
-│   └── data/
-│       └── raw/                  # Sample policy documents
+├── 📁 data/
+│   ├── raw/                        ← Original PDF documents
+│   ├── extracted/                  ← Text extracted from PDFs
+│   ├── cleaned/                    ← Normalized text
+│   └── clauses/                    ← Segmented clause datasets
 │
-├── src/                          # Core NLP modules
-│   ├── ingestion/
-│   │   ├── loader.py             # Document loading (PDF/DOCX/TXT)
-│   │   ├── pdf_extractor.py      # PDF text extraction
-│   │   ├── text_cleaner.py       # Text normalization
-│   │   └── document_segmentor.py # Clause segmentation
-│   ├── risk/
-│   │   ├── risk_scorer.py        # Risk scoring logic
-│   │   ├── explainer.py          # Risk explanation generator
-│   │   └── similarity_engine.py  # Cross-doc similarity
-│   └── semantic/
-│       ├── embedder.py           # Sentence-BERT embeddings
-│       ├── ner_extractor.py      # Named entity recognition
-│       └── rule_classifier.py    # Rule-based clause classifier
+├── 📁 notebooks/
+│   ├── step1_ingestion_preprocessing.ipynb
+│   ├── step2_semantic_extraction.ipynb
+│   ├── step3_risk_assessment.ipynb
+│   └── step4_interface_demo.ipynb
 │
-├── notebooks/
-│   ├── step1_ingestion.ipynb     # Document loading & cleaning
-│   ├── step2_risk_scoring.ipynb  # Risk labeling pipeline
-│   └── step3_embeddings.ipynb    # Embedding generation
+├── 📁 src/
+│   ├── ingestion/                  ← pdf_extractor · text_cleaner · document_segmentor
+│   ├── semantic/                   ← embedder · ner_extractor · rule_classifier
+│   ├── risk/                       ← similarity_engine · risk_scorer · explainer
+│   └── interface/                  ← app.py (Streamlit)
 │
-├── tests/
-│   └── test_pipeline.py          # Unit tests
+├── 📁 embeddings/
+│   ├── clause_embeddings.npy       ← 384-dim vectors for all clauses
+│   └── clause_ids.json             ← Clause ID index
+│
+├── 📁 outputs/
+│   └── risk_reports/
+│       ├── risk_labeled_clauses.csv
+│       ├── conflict_registry.csv
+│       └── gap_analysis.csv
 │
 ├── requirements.txt
-├── .env.example
-├── .gitignore
 └── README.md
 ```
 
 ---
 
-## Installation
+## ⚙️ Setup & Installation
 
-### Prerequisites
-
-- Python 3.9 or higher
-- pip or conda
-- Git
-
-### 1. Clone the Repository
-
+### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/policy-compliance-ai.git
-cd policy-compliance-ai
+git clone https://github.com/your-username/AI-driven_compliance_intelligence_system.git
+cd AI-driven_compliance_intelligence_system
 ```
 
-### 2. Create a Virtual Environment
-
+### 2. Create virtual environment
 ```bash
-# Using venv
 python -m venv venv
-source venv/bin/activate        # Linux / macOS
-venv\Scripts\activate           # Windows
 
-# OR using conda
-conda create -n compliance-ai python=3.10
-conda activate compliance-ai
+# Windows
+venv\Scripts\activate
+
+# Mac / Linux
+source venv/bin/activate
 ```
 
-### 3. Install Dependencies
-
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
-```
-
-### 4. Download NLP Models (first run)
-
-```bash
-python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2')"
 python -m spacy download en_core_web_sm
 ```
 
----
-
-## Quick Start
-
-### Option A — Run with Sample Data (Recommended)
-
+### 4. Run the Streamlit app
 ```bash
-# 1. Run all preprocessing notebooks
-jupyter nbconvert --to notebook --execute notebooks/step1_ingestion.ipynb
-jupyter nbconvert --to notebook --execute notebooks/step2_risk_scoring.ipynb
-jupyter nbconvert --to notebook --execute notebooks/step3_embeddings.ipynb
-
-# 2. Launch the dashboard
-streamlit run app/app.py
+streamlit run src/interface/app.py
 ```
 
-Open your browser at **http://localhost:8501**
+App opens at **http://localhost:8501**
 
-### Option B — Upload Your Own Documents
+---
 
-```bash
-streamlit run app/app.py
+## 📓 Running the Pipeline (Notebooks)
+
+Run notebooks **in order** before using pre-processed data in the app:
+
+```
+Step 1 → notebooks/step1_ingestion_preprocessing.ipynb
+Step 2 → notebooks/step2_semantic_extraction.ipynb
+Step 3 → notebooks/step3_risk_assessment.ipynb
+Step 4 → notebooks/step4_interface_demo.ipynb
 ```
 
-Then use the **sidebar → Upload your documents** to upload PDF / DOCX / TXT files directly.
+Each notebook produces output files consumed by the next step.
 
 ---
 
-## Usage Guide
+## 📦 Requirements
 
-### Tab 1 — Home Dashboard
-- KPI cards: total clauses, high-risk count, conflicts, gaps
-- Filter by document, risk level, and clause type
-- Interactive pie chart, bar chart, gauge, and stacked breakdown
-
-### Tab 2 — Document Explorer
-- Select any loaded document
-- View clause-level detail with risk badges
-- Filter by clause type and risk level
-
-### Tab 3 — Compliance Q&A
-- Ask plain-English questions (e.g., *"What must we do after a data breach?"*)
-- Semantic search returns top-K most relevant clauses with similarity scores
-- Sample questions provided for quick exploration
-
-### Tab 4 — Risk Dashboard
-- Score distribution histogram
-- Conflict registry with clause-pair view
-- Gap analysis with severity badges
-- Download high-risk clauses as CSV
-
-### Tab 5 — Document Summary
-- AI-generated executive summary
-- Risk profile sub-tab with pie chart
-- Clause breakdown with filtering
-- Recommendations with action items + CSV export
-
----
-
-## Notebooks
-
-Run them **in order** before launching the app:
-
-| Notebook | Purpose | Output |
-|---|---|---|
-| `step1_ingestion.ipynb` | Load & clean documents | Cleaned text files |
-| `step2_risk_scoring.ipynb` | Extract, score, label clauses | `risk_labeled_clauses.csv` |
-| `step3_embeddings.ipynb` | Generate sentence embeddings | `clause_embeddings.npy`, `clause_ids.json` |
-
----
-
-## Dataset
-
-Place your raw documents in `app/data/raw/`. Supported formats:
-
-- `.txt` — Plain text regulatory documents
-- `.pdf` — Scanned or digital PDFs (uses PyMuPDF)
-- `.docx` — Microsoft Word documents
-
-Sample documents from IAEA Safety Standards are included for demo purposes.
-
----
-
-## Environment Variables
-
-Copy `.env.example` to `.env` and set any optional keys:
-
-```bash
-cp .env.example .env
 ```
-
-```env
-# Optional: HuggingFace cache location
-HF_HOME=./models/cache
-
-# Optional: Logging level
-LOG_LEVEL=INFO
+pdfplumber
+PyPDF2
+spacy
+nltk
+pandas
+numpy
+sentence-transformers
+faiss-cpu
+scikit-learn
+streamlit
+plotly
+python-dotenv
+jupyter
+ipykernel
 ```
 
 ---
 
+## 🔬 How It Works
 
+### Step 1 — Document Ingestion
+- PDFs extracted page by page using `pdfplumber`
+- 8-stage text cleaning: encoding fix → whitespace → header removal → sentence boundaries
+- Heading detection using regex patterns (numbered, ALL CAPS, Title Case, keywords)
+- Each clause stored with: `clause_id · document · section · text · word_count`
+
+### Step 2 — Semantic Understanding
+- **Embeddings**: `all-MiniLM-L6-v2` (384 dimensions per clause)
+- **NER**: spaCy extracts laws, organizations, deadlines, penalties
+- **Rule Classification**: Pattern matching on modal verbs classifies each clause as:
+  `obligation · prohibition · permission · condition · penalty · definition · recommendation`
+
+### Step 3 — Risk Assessment
+- **Similarity matrix**: Cosine similarity across all clause pairs
+- **Conflict types**: `DIRECT CONFLICT · CROSS DOCUMENT · DUPLICATION · AMBIGUITY`
+- **Risk scoring formula**:
+  ```
+  Score = clause_type_weight + entity_signals + conflict_weight + complexity
+  Risk = HIGH (≥70) | MEDIUM (40–69) | LOW (<40)
+  ```
+- **Gap analysis**: Obligations without matching control clauses flagged
+- **Explainability**: Structured plain-English reasoning per clause
+
+### Step 4 — Interface
+- Semantic Q&A: query → embed → cosine search → top-k results with citations
+- Document Summary: 5-step animated loader + executive summary + recommendations
+- All outputs downloadable as CSV
+
+---
+
+## 📊 Sample Results
+
+| Metric | Value |
+|---|---|
+| Documents processed | 4 policy documents |
+| Total clauses extracted | 247 |
+| HIGH risk clauses | 38 (15.4%) |
+| MEDIUM risk clauses | 82 (33.2%) |
+| LOW risk clauses | 127 (51.4%) |
+| Conflicts detected | 12 |
+| Compliance gaps | 7 |
+| Embedding dimensions | 384 |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Language | Python 3.10 |
+| Embeddings | Sentence Transformers (`all-MiniLM-L6-v2`) |
+| NER | spaCy (`en_core_web_sm`) |
+| Vector Search | Scikit-Learn |
+| PDF Processing | pdfplumber, PyPDF2 |
+| Data | Pandas, NumPy |
+| Visualization | Plotly Express, Plotly Graph Objects |
+| Interface | Streamlit |
+| Development | Jupyter, VS Code, GitHub |
+| Deployment | Streamlit Cloud |
+
+---
+
+## 🚀 Deployment
+
+The app is deployed on **Streamlit Cloud**:
+
+```
+https://ai-drivencomplianceintelligencesystem-ew7r5jnbbenpprjjcttwyt.streamlit.app/
+```
+
+To deploy your own instance:
+1. Push code to GitHub
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Connect your repo
+4. Set main file as `src/interface/app.py`
+5. Click Deploy
+
+---
+
+## 📄 Project Info
+
+| Field | Details |
+|---|---|
+| Project Title | AI-Driven Policy & Compliance Intelligence System |
+| Company | TCS iON Digital Learning |
+| Institute | AKS University Satna |
+| Duration | 08 Apr 2026 – 27 May 2026 |
+| Total Effort | 90 hours |
+
+---
+
+## 📚 References
+
+- Reimers & Gurevych (2019). Sentence-BERT. EMNLP 2019.
+- Johnson et al. (2019). Billion-scale similarity search with GPUs. IEEE.
+- Honnibal & Montani (2017). spaCy 2. Software.
+- GDPR — Regulation (EU) 2016/679
+- ISO/IEC 27001:2022
+
+---
+
+## ⚖️ License
+
+This project was developed as part of the TCS iON Industry Project program.  
+© 2026 — For academic and educational use only.

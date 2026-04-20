@@ -1,0 +1,67 @@
+REGULATORY DOCUMENT: DATA PROTECTION AND PRIVACY POLICY
+Version 3.1 | Effective Date: 2024-01-01
+
+1. GENERAL PROVISIONS
+
+1.1 Purpose and Scope
+This regulation establishes the obligations, prohibitions, and conditions governing the collection, processing, storage, and transfer of personal data within regulated organisations. All entities subject to this regulation must comply fully with its provisions from the effective date onwards.
+
+1.2 Definitions
+"Personal data" means any information relating to an identified or identifiable natural person. "Data controller" refers to the entity that determines the purposes and means of processing personal data. "Processing" means any operation performed upon personal data.
+
+2. OBLIGATIONS OF DATA CONTROLLERS
+
+2.1 Lawful Processing
+Organisations must ensure that all personal data is processed lawfully, fairly, and in a transparent manner. Data controllers shall obtain explicit consent from data subjects before processing their personal data for any purpose not specified at the time of collection.
+
+2.2 Data Minimisation
+Entities are required to collect only the minimum amount of personal data necessary for the specified purpose. Data controllers must not retain personal data beyond the period necessary for the purpose for which it was collected.
+
+2.3 Security Measures
+All organisations must implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk. Security measures shall include encryption of data in transit and at rest, access controls, and regular security audits.
+
+2.4 Data Breach Notification
+In the event of a personal data breach, the data controller must notify the supervisory authority within 72 hours of becoming aware of the breach, where feasible. Where notification is not made within 72 hours, it shall be accompanied by reasons for the delay. Data subjects must be informed without undue delay if the breach is likely to result in high risk to their rights.
+
+3. PROHIBITIONS
+
+3.1 Unlawful Transfer
+Organisations must not transfer personal data to third countries unless adequate protection measures are in place as required by Article 46 of this Regulation. It is strictly prohibited to sell personal data to third parties without the explicit consent of the data subject.
+
+3.2 Automated Decision-Making
+Organisations shall not subject individuals to decisions based solely on automated processing, including profiling, which produces legal effects concerning the data subject, without ensuring a human review mechanism is in place.
+
+3.3 Sensitive Data
+The processing of special categories of personal data, including health data, biometric data, and political opinions, is prohibited unless explicitly permitted under Section 9 of this Regulation.
+
+4. ENFORCEMENT AND PENALTIES
+
+4.1 Administrative Fines
+Violations of the provisions of this Regulation shall be subject to administrative fines. Infringements of the basic principles for processing shall be subject to fines up to EUR 20,000,000 or 4% of total worldwide annual turnover, whichever is higher.
+
+4.2 Criminal Liability
+Intentional violations involving the unlawful transfer of personal data may result in criminal liability under applicable national law. Penalties include imprisonment not exceeding five years for serious violations.
+
+4.3 Supervisory Authority
+The designated supervisory authority has the power to impose temporary or permanent limitations on processing, order the rectification or erasure of personal data, and withdraw any certification issued.
+
+5. COMPLIANCE DEADLINES
+
+5.1 Implementation Schedule
+All data controllers must complete a full audit of their data processing activities within 90 days of the effective date. Privacy impact assessments must be conducted no later than 30 days before commencing any new high-risk processing activity.
+
+5.2 Certification
+Organisations must obtain certification from an accredited body within 18 months of the effective date. Failure to obtain certification by the deadline will result in automatic suspension of data processing licences.
+
+6. RIGHTS OF DATA SUBJECTS
+
+6.1 Right of Access
+Data subjects have the right to obtain from the data controller confirmation as to whether or not personal data concerning them is being processed. Controllers must respond to access requests within 30 days of receipt.
+
+6.2 Right to Erasure
+Data subjects are entitled to request the erasure of their personal data where the data is no longer necessary for the purposes for which it was collected. Controllers shall fulfil erasure requests without undue delay and in any event within 30 days.
+
+7. DATA PROTECTION OFFICER
+
+7.1 Designation
+Organisations processing personal data on a large scale must designate a Data Protection Officer. The DPO must be appointed on the basis of professional qualities and expertise in data protection law. Controllers must publish the contact details of the Data Protection Officer and communicate them to the supervisory authority.

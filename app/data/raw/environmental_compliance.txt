@@ -1,0 +1,46 @@
+ENVIRONMENTAL COMPLIANCE REGULATORY FRAMEWORK
+Industrial Operations — Environmental Protection Standards
+Revision: 2024-A
+
+PART I: GENERAL REQUIREMENTS
+
+Article 1 — Applicability
+This framework applies to all industrial facilities that discharge waste, emit pollutants, or otherwise interact with the natural environment. Operators must register with the Environmental Regulatory Authority within 60 days of commencing operations.
+
+Article 2 — Environmental Management System
+All facilities must establish and maintain an ISO 14001-compliant environmental management system. Organisations are required to conduct internal environmental audits at least twice per year. Environmental management systems must be certified by an accredited third-party auditor within 12 months of facility commissioning.
+
+PART II: AIR QUALITY
+
+Article 3 — Emission Limits
+Operators shall not discharge pollutants into the atmosphere in excess of the limits specified in Schedule 1 of this framework. Continuous emissions monitoring systems must be installed and maintained at all major emission points. Monitoring data must be transmitted to the Authority in real time and must not be tampered with or falsified.
+
+Article 4 — Reporting
+Operators are required to submit quarterly air quality compliance reports to the Environmental Regulatory Authority. Reports must be submitted no later than 30 days after the end of each quarter. Failure to submit reports within the deadline will result in an automatic penalty of USD 10,000 per day of delay.
+
+PART III: WATER AND WASTEWATER
+
+Article 5 — Discharge Standards
+It is strictly prohibited to discharge industrial effluent into any watercourse, groundwater, or coastal water without a valid discharge permit. Discharge volumes and pollutant concentrations must not exceed the limits stipulated in the discharge permit. Operators must install flow meters and sampling points at all discharge locations.
+
+Article 6 — Spill Response
+In the event of any accidental spill of hazardous substances, operators must immediately contain the spill and notify the Authority within two hours. A full incident report must be submitted within 48 hours. Operators must not remove or disturb evidence of a spill before regulatory inspection.
+
+PART IV: WASTE MANAGEMENT
+
+Article 7 — Hazardous Waste
+Operators shall classify, store, transport, and dispose of hazardous waste in accordance with the procedures specified in Directive 2024/HW/003. Hazardous waste must not be mixed with non-hazardous waste. Storage of hazardous waste on site must not exceed 90 days without written authority from the regulatory body.
+
+Article 8 — Waste Records
+Organisations must maintain a complete waste register documenting the type, quantity, origin, and disposal route of all waste generated. Waste records must be retained for a minimum of five years and made available to inspectors on request.
+
+PART V: ENFORCEMENT
+
+Article 9 — Inspections
+Inspectors appointed by the Authority are entitled to enter any facility at any reasonable time to conduct inspections. Operators must not obstruct, hinder, or mislead any authorised inspector. All requested records must be made available within 24 hours of a formal request.
+
+Article 10 — Penalties
+Violations of the provisions of this framework are subject to administrative fines ranging from USD 5,000 to USD 500,000 depending on the severity of the infringement. Repeat violations within a 12-month period shall attract double the standard penalty. Criminal prosecution may be initiated for deliberate or grossly negligent violations, with penalties including imprisonment of up to three years.
+
+Article 11 — Licence Conditions
+Operating licences may be suspended pending investigation of serious environmental incidents. Licences shall be revoked where the operator is found to have systematically violated environmental standards or concealed violations from the Authority.

@@ -1,0 +1,74 @@
+IAEA SAFETY STANDARDS SERIES
+Nuclear Safety Requirements: Operation of Nuclear Power Plants
+Document Reference: NS-R-2 | Revision 2024
+
+SECTION 1: GENERAL SAFETY REQUIREMENTS
+
+1.1 Scope of Application
+These requirements apply to all nuclear power plant operators, regulatory bodies, and supporting organisations involved in the design, construction, commissioning, operation, and decommissioning of nuclear power plants. All parties must comply with these safety standards as a condition of operating licence.
+
+1.2 Safety Objectives
+Operators shall ensure that all reasonably practicable measures are taken to protect individuals, society, and the environment from harmful effects of ionising radiation. The fundamental safety objective is to protect people and the environment from harmful effects of ionising radiation.
+
+SECTION 2: MANAGEMENT OF SAFETY
+
+2.1 Safety Management System
+The operating organisation must establish, implement, and maintain a safety management system. The safety management system shall integrate all elements of the management system so that safety requirements are established and applied coherently with other requirements. Safety must not be compromised by commercial, operational, or other pressures.
+
+2.2 Safety Culture
+All personnel with responsibilities for safety must foster a strong safety culture. The operating organisation is required to assess and continuously improve the safety culture of the organisation. Organisations must not permit any activity that could undermine safety culture.
+
+2.3 Responsibilities
+The operating organisation shall retain overall responsibility for safety, even where specific activities are contracted out to other organisations. It is prohibited to delegate the fundamental safety responsibility to any contractor or subcontractor.
+
+SECTION 3: RADIATION PROTECTION
+
+3.1 Dose Limits
+Operators must ensure that radiation doses to workers do not exceed the annual effective dose limit of 20 mSv averaged over five consecutive years. Doses must not exceed 50 mSv in any single year. Organisations must not allow doses to exceed these limits under any operational circumstances.
+
+3.2 ALARA Principle
+All radiation exposures shall be kept as low as reasonably achievable (ALARA), economic and social factors being taken into account. Operators are required to demonstrate compliance with the ALARA principle in all operational activities.
+
+3.3 Monitoring and Recording
+Organisations must maintain comprehensive records of all radiation doses received by workers. Records shall be retained for a minimum period of 30 years after the last recorded dose. Dose records must not be destroyed without explicit authorisation from the regulatory body under Regulation 15.3.
+
+SECTION 4: EMERGENCY PREPAREDNESS
+
+4.1 Emergency Plans
+Operating organisations must develop and maintain comprehensive emergency response plans. Emergency plans shall be reviewed and updated at least every three years. Plans must address all credible emergency scenarios including loss of coolant accidents, fires, and external events.
+
+4.2 Emergency Exercises
+The operating organisation is required to conduct full-scale emergency exercises at least once every three years. Tabletop exercises must be conducted annually. Results of all exercises shall be documented and corrective actions implemented within 90 days of exercise completion.
+
+4.3 Notification Requirements
+In the event of an emergency, the operating organisation must immediately notify the regulatory authority, local emergency services, and the IAEA Emergency Response Centre. Notification must occur within one hour of declaring an emergency condition. Organisations must not delay notification for any operational reason.
+
+SECTION 5: NUCLEAR SECURITY
+
+5.1 Physical Protection
+Operators shall implement a physical protection system to prevent unauthorised access to nuclear material and nuclear installations. Access to vital areas must be restricted to authorised personnel only. It is strictly prohibited to allow unescorted access to vital areas by any person not holding valid authorisation under Security Plan Section 7.
+
+5.2 Insider Threat
+Organisations must implement an insider threat mitigation programme. Background checks are required for all personnel with access to sensitive nuclear information or materials. Personnel must not share access credentials or allow others to use their authorisation.
+
+5.3 Cybersecurity
+Operators are required to protect all digital systems important to safety from cyber threats. Organisations must conduct cybersecurity assessments no later than every two years. It is prohibited to connect safety-critical digital systems directly to the internet or any unsecured external network.
+
+SECTION 6: AGEING MANAGEMENT
+
+6.1 Ageing Surveillance
+Organisations must implement an ageing management programme for all structures, systems, and components important to safety. Inspections of safety-critical components shall be conducted in accordance with intervals specified in Technical Specification Chapter 4. Required inspections must not be deferred beyond the specified intervals without prior regulatory approval.
+
+6.2 Life Extension
+Organisations seeking to extend plant operation beyond the original design life must submit a comprehensive safety review to the regulatory authority no later than 10 years before the licence expiry date. Extended operation is prohibited unless formal regulatory approval has been granted.
+
+SECTION 7: PENALTIES FOR NON-COMPLIANCE
+
+7.1 Regulatory Actions
+The regulatory body may issue compliance orders, impose conditions on the operating licence, or suspend operations where safety requirements are not met. Fines of up to USD 1,000,000 per violation per day may be imposed for continued non-compliance with mandatory requirements.
+
+7.2 Criminal Provisions
+Wilful violations of safety requirements that result in significant radiation exposure shall be subject to criminal prosecution under applicable national law. Penalties may include imprisonment for up to ten years for the most serious violations.
+
+7.3 Licence Revocation
+The operating licence shall be revoked where the operating organisation is found to have deliberately concealed safety-relevant information from the regulatory authority or to have falsified safety records.

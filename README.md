@@ -19,8 +19,6 @@
 - [Usage Guide](#usage-guide)
 - [Notebooks](#notebooks)
 - [Dataset](#dataset)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -28,11 +26,6 @@
 
 Policy Compliance AI is an end-to-end NLP pipeline that ingests regulatory documents (PDF, DOCX, TXT), extracts compliance clauses, scores risk levels, detects conflicts and gaps, and provides a semantic Q&A interface — all surfaced through an interactive Streamlit dashboard.
 
-**Datasets Used:**
-- 📄 Dataset 1: Development of Regulatory Documents
-- 📄 Dataset 2: IAEA Safety Standards Series
-
----
 
 ## Features
 
@@ -238,28 +231,4 @@ LOG_LEVEL=INFO
 
 ---
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m "feat: add your feature"`
-4. Push the branch: `git push origin feature/your-feature`
-5. Open a Pull Request
-
-Please follow [Conventional Commits](https://www.conventionalcommits.org/) for commit messages.
-
----
-
-## License
-
-This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
-
----
-
-## Acknowledgements
-
-- [Sentence Transformers](https://www.sbert.net/) — `all-MiniLM-L6-v2` embedding model
-- [Streamlit](https://streamlit.io/) — Dashboard framework
-- [Plotly](https://plotly.com/python/) — Interactive charts
-- [spaCy](https://spacy.io/) — NER pipeline
-- IAEA Safety Standards Series — Sample dataset
